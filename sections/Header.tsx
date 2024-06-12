@@ -30,7 +30,7 @@ export default function Header() {
 
         <div class="flex flex-row justify-between">
           {band && <img src={band} loading="lazy" />}
-          <div class="flex flex-col items-center justify-center gap-8">
+          <div class="flex flex-col justify-center gap-8">
             <h1 class="dm-sans font-bold text-4xl text-white">
               SBS MTV The Kpop <br />Show Ticket Package
             </h1>
@@ -39,7 +39,7 @@ export default function Header() {
               you to experience a live Kpop recording.
             </p>
 
-            <div class="flex flex-row items-center justify-center gap-5">
+            <div class="flex flex-row gap-5">
               <Button customStyles="border-none bg-[#F5167E]">Get Ticket</Button>
               <Button>Learn More</Button>
             </div>

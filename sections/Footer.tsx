@@ -1,43 +1,63 @@
-import { ImageWidget } from "apps/admin/widgets.ts";
-import Image from "apps/website/components/Image.tsx";
+import { asset } from "$fresh/runtime.ts";
+import Icon from "site/components/ui/Icon.tsx";
 
-interface Props {
-  href?: string;
-  image?: ImageWidget;
-  alt?: string;
-  width?: number;
-  height?: number;
-  text?: string;
-}
+export default function Footer() {
+  const facebook = asset("img/facebook.png");
+  const twitter = asset("img/twitter.png");
+  const linkedin = asset("img/linkedin.png");
 
-function Footer({
-  image =
-    "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4959/d7aa9290-074f-417c-99c3-5b0587c8c2ee",
-  href = "https://deco.cx/",
-  text = "Made with",
-  alt = "Made with deco.cx",
-  height = 20,
-  width = 50,
-}: Props) {
   return (
-    <div class="py-8 lg:px-0 px-6 fixed bottom-0 w-full mx-auto">
-      <a
-        href={href}
-        class="flex flex-row gap-1 items-center justify-center text-xs"
-        target="_blank"
-      >
-        {text && <p>{text}</p>}
-        {image && (
-          <Image
-            src={image || ""}
-            alt={alt || ""}
-            height={height || 20}
-            width={width || 50}
-          />
-        )}
-      </a>
-    </div>
+    <footer class="bg-[#0A075F] mt-9">
+      <div class="max-w-[1240px] mx-auto flex flex-row pt-14">
+        <div class="flex flex-col gap-4 max-w-[333px]">
+          <Icon id="Ticket" width={34} height={34} />
+          <p class="dm-sans text-[#F3F3F3] text-sm font-normal">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
+            mollitia repellat illum quam? Id corporis, odit dolorum distinctio
+            nemo pariatur laudantium aperiam reprehenderit aut dolorem
+            obcaecati, inventore nihil doloribus! A?
+          </p>
+
+          <div class="flex flex-row gap-4">
+            <a href="/">
+              <img
+                src={facebook}
+                loading="lazy"
+                width={36}
+                height={36}
+                alt="Facebook"
+              />
+            </a>
+            <a href="/">
+              <img
+                src={twitter}
+                loading="lazy"
+                width={36}
+                height={36}
+                alt="Twitter"
+              />
+            </a>
+            <a href="https://www.linkedin.com/in/luanargolo/" target="_blank">
+              <img
+                src={linkedin}
+                loading="lazy"
+                width={36}
+                height={36}
+                alt="LinkedIn"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col items-center justify-center gap-4 pt-16 pb-5">
+        <hr class="border border-[#4C4D8B] max-w-[1200px] w-full" />
+        <a href="https://www.luanlemos.dev/" target="_blank">
+          <p class="dm-sans text-[#FEFEFE] font-normal text-sm text-center">
+            Copyright © 2024 Luan Lemos
+          </p>
+        </a>
+      </div>
+    </footer>
   );
 }
-
-export default Footer;
