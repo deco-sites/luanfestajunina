@@ -1,5 +1,6 @@
 import { asset } from "$fresh/runtime.ts";
 import Icon from "site/components/ui/Icon.tsx";
+import { Button } from "site/components/Button.tsx";
 
 export default function Footer() {
   const facebook = asset("img/facebook.png");
@@ -84,6 +85,15 @@ export default function Footer() {
             <li class="dm-sans font-medium text-[#F3F3F3] text-sm">Privacy</li>
             <li class="dm-sans font-medium text-[#F3F3F3] text-sm">Terms</li>
           </ul>
+        </div>
+
+        <div class="flex flex-col gap-6 max-w-[362px]">
+          <p class="dm-sans font-bold text-white text-lg">Stay In The Loop</p>
+          <p class="dm-sans font-normal text-[#F3F3F3] text-sm">Join our mailing list to stay in the loop with our newest for Event and concert</p>
+          <div class="relative flex flex-row">
+            <input type="text" class="w-full min-h-16 border border-[#4C4D8B] rounded-full pl-4 text-[#959595] placeholder:text-[#959595]" placeholder="Enter your email" />
+            <Button customStyles="absolute border-none bg-[#F5167E] !py-3 !px-6 right-4 top-1/2 -translate-y-1/2">Subscribe Now</Button>
+          </div>
         </div>
       </div>
 
