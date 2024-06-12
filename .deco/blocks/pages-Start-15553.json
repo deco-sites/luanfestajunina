@@ -47,6 +47,47 @@
       ]
     },
     {
+      "__resolveType": "site/sections/Sponsors.tsx",
+      "sponsors": [
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10737/b34764b5-1fe1-4cd3-9b1e-217c146cf8d0",
+          "label": "Zee.Dog"
+        },
+        {
+          "label": "Zee.Now",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10737/255b8c1f-18f9-4b5b-9d51-82979f58764b"
+        },
+        {
+          "label": "Zee.Dog Kitchen",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10737/8a49a455-f02c-49de-9a35-ef2acde2d3a5"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10737/99b9414a-6e6c-47f3-af14-aefe2b07b03e",
+          "label": "Seres"
+        },
+        {
+          "label": "Adote Petz",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10737/a13e2e59-825c-4103-9bc4-bb781f37b266"
+        },
+        {
+          "label": "Petix",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10737/1f161a2f-2377-42e3-9642-0e0b158b44a6"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10737/6b4c9d32-47a3-454b-99bd-fbcb81983ed3",
+          "label": "Cansei De Ser Grato"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10737/cb34b9f7-654b-466b-8b9e-a9cb070a9056",
+          "label": "Cão Cidadão"
+        },
+        {
+          "label": "Super Secão",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10737/40ca3922-71f4-4453-9fc2-8cb8ff5319a4"
+        }
+      ]
+    },
+    {
       "__resolveType": "site/sections/Footer.tsx"
     }
   ],

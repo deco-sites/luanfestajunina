@@ -8,7 +8,7 @@ export default function Footer() {
 
   return (
     <footer class="bg-[#0A075F] mt-9">
-      <div class="max-w-[1240px] mx-auto flex flex-row pt-14">
+      <div class="max-w-[1240px] mx-auto justify-between flex flex-row pt-14">
         <div class="flex flex-col gap-4 max-w-[333px]">
           <Icon id="Ticket" width={34} height={34} />
           <p class="dm-sans text-[#F3F3F3] text-sm font-normal">
@@ -47,6 +47,43 @@ export default function Footer() {
               />
             </a>
           </div>
+        </div>
+
+        <div class="flex flex-col gap-6">
+          <p class="dm-sans font-bold text-white text-lg">Plan Events</p>
+          <ul>
+            <li class="dm-sans font-medium text-[#F3F3F3] text-sm">
+              Create and Set Up
+            </li>
+            <li class="dm-sans font-medium text-[#F3F3F3] text-sm">
+              Sell Tickets
+            </li>
+            <li class="dm-sans font-medium text-[#F3F3F3] text-sm">
+              Online RSVP
+            </li>
+            <li class="dm-sans font-medium text-[#F3F3F3] text-sm">
+              Online Events
+            </li>
+          </ul>
+        </div>
+
+        <div class="flex flex-col gap-6">
+          <p class="dm-sans font-bold text-white text-lg">Event</p>
+          <ul>
+            <li class="dm-sans font-medium text-[#F3F3F3] text-sm">About Us</li>
+            <li class="dm-sans font-medium text-[#F3F3F3] text-sm">Press</li>
+            <li class="dm-sans font-medium text-[#F3F3F3] text-sm">
+              Contact Us
+            </li>
+            <li class="dm-sans font-medium text-[#F3F3F3] text-sm">
+              Help Center
+            </li>
+            <li class="dm-sans font-medium text-[#F3F3F3] text-sm">
+              How it Works
+            </li>
+            <li class="dm-sans font-medium text-[#F3F3F3] text-sm">Privacy</li>
+            <li class="dm-sans font-medium text-[#F3F3F3] text-sm">Terms</li>
+          </ul>
         </div>
       </div>
 
