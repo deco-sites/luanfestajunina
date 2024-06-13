@@ -15,8 +15,8 @@ interface Props {
 
 export default function Sponsors({ sponsors }: Props) {
   return (
-    <div class="max-container-auto flex flex-col items-center justify-center mt-16" id="sponsors">
-      <h2 class="dm-sans text-[#242565] font-bold text-4xl">
+    <div class="max-container-auto flex flex-col items-center justify-center my-16" id="sponsors">
+      <h2 class="text-center dm-sans text-[#242565] font-bold text-4xl">
         Nossos patrocinadores
       </h2>
       <p class="dm-sans font-normal text-[#6A6A6A] text-lg mt-5">
@@ -24,7 +24,7 @@ export default function Sponsors({ sponsors }: Props) {
         apenas alguns deles.
       </p>
 
-      <div class="mt-16 grid grid-cols-5 gap-6">
+      <div class="mt-16 grid grid-cols-3 lg:grid-cols-5 gap-6">
         <div class="cursor-pointer flex items-center justify-center w-[80px] h-[80px] relative">
           <Icon id="Petz" width={80} height={80} class="absolute top-1/2 hover:scale-110 transition-all" />
         </div>

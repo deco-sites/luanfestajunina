@@ -8,9 +8,9 @@ export default function Footer() {
   const linkedin = asset("img/linkedin.png");
 
   return (
-    <footer class="bg-[#0A075F] mt-9" id="footer">
-      <div class="max-w-[1240px] mx-auto justify-between flex flex-row pt-14">
-        <div class="flex flex-col gap-4 max-w-[333px]">
+    <footer class="bg-[#0A075F] pt-9" id="footer">
+      <div class="max-container-auto justify-between flex flex-row flex-wrap pt-14">
+        <div class="flex flex-row flex-wrap lg:flex-col gap-4 max-w-[333px]">
           <Icon id="Ticket" width={34} height={34} />
           <p class="dm-sans text-[#F3F3F3] text-sm font-normal">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
@@ -50,7 +50,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div class="flex flex-col gap-6">
+        <div class="flex flex-col gap-6 pt-6 lg:pt-0">
           <p class="dm-sans font-bold text-white text-lg">Plan Events</p>
           <ul>
             <li class="dm-sans font-medium text-[#F3F3F3] text-sm">
@@ -68,7 +68,7 @@ export default function Footer() {
           </ul>
         </div>
 
-        <div class="flex flex-col gap-6">
+        <div class="flex flex-col gap-6 pt-6 lg:pt-0">
           <p class="dm-sans font-bold text-white text-lg">Event</p>
           <ul>
             <li class="dm-sans font-medium text-[#F3F3F3] text-sm">About Us</li>
@@ -87,7 +87,7 @@ export default function Footer() {
           </ul>
         </div>
 
-        <div class="flex flex-col gap-6 max-w-[362px]">
+        <div class="flex flex-col gap-6 max-w-[362px] pt-6 lg:pt-0">
           <p class="dm-sans font-bold text-white text-lg">Stay In The Loop</p>
           <p class="dm-sans font-normal text-[#F3F3F3] text-sm">Join our mailing list to stay in the loop with our newest for Event and concert</p>
           <div class="relative flex flex-row">

@@ -12,7 +12,7 @@ export default function Header() {
   return (
     <header>
       <div class="max-container-auto pt-6">
-        <div class="flex flex-row justify-between">
+        <div class="hidden lg:flex flex-row justify-between">
           <div class="w-9 h-9 flex items-center justify-center">
             <a href="/">
               <Icon id="Ticket" width={36} height={36} />
@@ -28,8 +28,8 @@ export default function Header() {
         </div>
 
         <div class="flex flex-row justify-between pb-28 gap-10">
-          {band && <img src={band} loading="lazy" />}
-          <div class="flex flex-col justify-center gap-8">
+          {band && <img class="hidden lg:block" src={band} loading="lazy" />}
+          <div class="flex flex-col justify-center gap-8 pt-9 lg:pt-0">
             <h1 class="dm-sans font-bold text-4xl text-white">
               Festa Junina <br />Venha para a melhor festa junina do Brasil!
             </h1>
@@ -38,7 +38,7 @@ export default function Header() {
               A melhor festa junina do Brasil está de volta!
             </p>
 
-            <div class="flex flex-row gap-5">
+            <div class="flex flex-col lg:flex-row gap-5">
               <Button customStyles="border-none bg-[#F5167E]">Garantir ingresso</Button>
               <Button>Saiba mais</Button>
             </div>

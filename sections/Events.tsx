@@ -20,7 +20,7 @@ const EventItem = ({ event }: { event: Event }) => (
       src={event.image}
       width={340}
       height={340}
-      class="cursor-pointer rounded-t-2xl w-[340px] h-[340px] hover:scale-110 transition-all"
+      class="cursor-pointer rounded-t-2xl w-full lg:w-[340px] lg:h-[340px] hover:scale-110 transition-all"
     />
     <div class="flex flex-row justify-center gap-5 shadow-custom items-baseline rounded-b-2xl">
       <p class="dm-sans font-bold text-xs text-[#3D37F1]">
@@ -47,11 +47,11 @@ export default function Events({ events }: Props) {
 
   return (
     <div class="max-container-auto" id="events">
-      <div class="w-full flex flex-row items-center justify-between">
-        <h2 class="dm-sans text-[#242565] text-4xl font-bold">
+      <div class="w-full flex flex-col lg:flex-row items-center justify-between">
+        <h2 class="dm-sans text-[#242565] text-4xl font-bold pb-5 lg:pb-0">
           Próximos eventos
         </h2>
-        <div class="space-x-4">
+        <div class="flex flex-col gap-3 lg:flex-row items-center">
           {buttons.map((button, index) => (
             <button
               key={index}
@@ -70,7 +70,7 @@ export default function Events({ events }: Props) {
         </div>
       </div>
 
-      <div class="grid grid-cols-3 gap-8 mt-20">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-20">
         {events?.map((event, index) => <EventItem key={index} event={event} />)}
       </div>
     </div>

@@ -1,7 +1,7 @@
 export default function Searchbox() {
   return (
     <div class="max-container-auto relative -top-14" id="searchbox">
-      <div class="bg-blue-900 text-white rounded-lg shadow-lg p-6 flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6">
+      <div class="bg-blue-900 text-white rounded-lg shadow-lg p-6 flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6">  
         <div class="flex-1">
           <label for="event" class="block text-sm font-medium">
             Procurar show
