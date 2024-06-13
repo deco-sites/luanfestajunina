@@ -6,6 +6,9 @@
       "__resolveType": "site/sections/Header.tsx"
     },
     {
+      "__resolveType": "site/sections/Searchbox.tsx"
+    },
+    {
       "__resolveType": "site/sections/Events.tsx",
       "events": [
         {

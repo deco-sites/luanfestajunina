@@ -8,7 +8,7 @@ export default function Footer() {
   const linkedin = asset("img/linkedin.png");
 
   return (
-    <footer class="bg-[#0A075F] mt-9">
+    <footer class="bg-[#0A075F] mt-9" id="footer">
       <div class="max-w-[1240px] mx-auto justify-between flex flex-row pt-14">
         <div class="flex flex-col gap-4 max-w-[333px]">
           <Icon id="Ticket" width={34} height={34} />

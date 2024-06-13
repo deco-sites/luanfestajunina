@@ -2,8 +2,8 @@ import Icon from "site/components/ui/Icon.tsx";
 import { Button } from "site/components/Button.tsx";
 import { asset } from "$fresh/runtime.ts";
 
-const HeaderItem = ({ children }: { children: React.ReactNode }) => (
-  <button class="dm-sans text-base text-white font-medium">{children}</button>
+const HeaderItem = ({ href, children }: { href: string, children: React.ReactNode }) => (
+  <a href={href} class="dm-sans text-base text-white font-medium">{children}</a>
 );
 
 export default function Header() {
@@ -20,28 +20,27 @@ export default function Header() {
           </div>
 
           <div class="flex flex-row gap-10">
-            <HeaderItem>Schedule</HeaderItem>
-            <HeaderItem>Schedule</HeaderItem>
-            <HeaderItem>Schedule</HeaderItem>
-            <HeaderItem>Schedule</HeaderItem>
-            <Button customStyles="!py-2.5 !px-8">Login</Button>
+            <HeaderItem href="#events">Eventos</HeaderItem>
+            <HeaderItem href="#searchbox">Reservar ingresso</HeaderItem>
+            <HeaderItem href="#sponsors">Patrocinadores</HeaderItem>
+            <HeaderItem href="#footer">Saiba mais</HeaderItem>
           </div>
         </div>
 
-        <div class="flex flex-row justify-between">
+        <div class="flex flex-row justify-between pb-28 gap-10">
           {band && <img src={band} loading="lazy" />}
           <div class="flex flex-col justify-center gap-8">
             <h1 class="dm-sans font-bold text-4xl text-white">
-              SBS MTV The Kpop <br />Show Ticket Package
+              Festa Junina <br />Venha para a melhor festa junina do Brasil!
             </h1>
             <p class="dm-sans font-normal text-lg text-white">
-              Look no further! Our SBS The Show tickets are the simplest way for
-              you to experience a live Kpop recording.
+              Vista sua melhor roupa! Use o seu melhor chapéu! <br/>
+              A melhor festa junina do Brasil está de volta!
             </p>
 
             <div class="flex flex-row gap-5">
-              <Button customStyles="border-none bg-[#F5167E]">Get Ticket</Button>
-              <Button>Learn More</Button>
+              <Button customStyles="border-none bg-[#F5167E]">Garantir ingresso</Button>
+              <Button>Saiba mais</Button>
             </div>
           </div>
         </div>
