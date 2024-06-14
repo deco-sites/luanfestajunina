@@ -158,7 +158,7 @@
           }
         }
       ],
-      "title": "O que nossos clientes estão falando",
+      "title": "O que os festejantes estão falando",
       "testimonials": [
         {
           "text": "Foi muito bom participar desse São João com essa galera massa! TMJ Mulekote, levarei meus parças do Al-Hilal na próxima vez!",
@@ -202,6 +202,9 @@
     },
     {
       "__resolveType": "site/sections/Footer.tsx"
+    },
+    {
+      "__resolveType": "site/sections/Global.tsx"
     }
   ],
   "__resolveType": "website/pages/Page.tsx"

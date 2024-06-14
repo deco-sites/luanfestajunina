@@ -109,23 +109,20 @@ function SliderItem(
   return (
     <div
       id={id}
-      class="relative overflow-y-hidden w-full min-h-[292px]"
+      class="relative overflow-y-hidden w-full"
     >
-      <div class="flex flex-col justify-center gap-16 p-8 border border-base-content rounded-2xl h-full max-w-[600px]">
-        <p class="text-lg">{content?.description}</p>
-        <div class="flex items-center gap-5">
-          <Image
-            class="object-cover w-14 h-14 rounded-full"
-            alt={content?.alt}
-            src={content?.avatar || ""}
-            width={56}
-            height={56}
-          />
-          <div class="flex flex-col">
-            <p class="font-semibold text-base">{content?.name}</p>
-            <p class="text-base">{content?.position}</p>
-          </div>
-        </div>
+      <div class="flex flex-col justify-center items-center gap-4 p-6 border border-[#FF7A00] rounded-[32px] max-w-[300px] lg:max-w-[470px]">
+        <Image
+          class="cursor-pointer object-cover w-[170px] h-[170px] rounded-full hover:scale-110 transition-all"
+          alt={content?.alt}
+          src={content?.avatar || ""}
+          width={170}
+          height={170}
+        />
+        <p class="dm-sans text-[#3E005B] font-bold text-2xl">{content?.name}</p>
+        <p class="dm-sans text-black font-normal text-base">
+          {content?.description}
+        </p>
       </div>
     </div>
   );
@@ -165,28 +162,18 @@ function Dots({ slides, interval = 0 }: Props) {
 
 function Buttons() {
   return (
-    <div class="flex gap-4">
-      <div class="flex items-center justify-center z-10 col-start-1 row-start-2">
-        <Slider.PrevButton class="flex items-center justify-center btn-circle border border-base-content">
-          <Icon
-            class="text-base-content"
-            size={24}
-            id="ArrowRight"
-            strokeWidth={3}
-          />
+    <>
+      <div class="hidden relative sm:block z-10 col-start-1 row-start-3">
+        <Slider.PrevButton class="disabled:hidden btn btn-circle btn-outline absolute right-1/2 bg-base-100">
+          <Icon size={24} id="ChevronLeft" strokeWidth={3} />
         </Slider.PrevButton>
       </div>
-      <div class="flex items-center justify-center z-10 col-start-3 row-start-2">
-        <Slider.NextButton class="flex items-center justify-center btn-circle border border-base-content">
-          <Icon
-            class="text-base-content"
-            size={24}
-            id="ArrowLeft"
-            strokeWidth={3}
-          />
+      <div class="hidden relative sm:block z-10 col-start-3 row-start-3">
+        <Slider.NextButton class="disabled:hidden btn btn-circle btn-outline absolute left-1/2 bg-base-100">
+          <Icon size={24} id="ChevronRight" strokeWidth={3} />
         </Slider.NextButton>
       </div>
-    </div>
+    </>
   );
 }
 
@@ -197,30 +184,33 @@ function Carousel(props: Props) {
   return (
     <div
       id={id}
-      class="min-h-min flex flex-col lg:container md:max-w-6xl lg:mx-auto mx-4 py-12 lg:py-28"
+      class="max-container-auto flex flex-col gap-11 my-16 page-content right"
     >
       <h2 class="text-center dm-sans text-[#242565] font-bold text-4xl">
         {title}
       </h2>
-      <Slider class="carousel carousel-center w-full col-span-full row-span-full gap-6">
-        {slides?.map((slide, index) => (
-          <Slider.Item
-            index={index}
-            class="carousel-item max-w-[600px] w-full"
-          >
-            <SliderItem
-              slide={slide}
-              id={`${id}::${index}`}
-            />
-          </Slider.Item>
-        ))}
-      </Slider>
+      <div
+        id={id}
+        class="container grid lg:grid-cols-[48px_1fr_48px] px-0 sm:px-5"
+      >
+        <Slider class="carousel carousel-center sm:carousel-end gap-6 col-span-full row-start-2 row-end-6">
+          {slides?.map((slide, index) => (
+            <Slider.Item
+              index={index}
+              class="carousel-item sm:first:pl-0 sm:last:pr-0"
+            >
+              <SliderItem
+                slide={slide}
+                id={`${id}::${index}`}
+              />
+            </Slider.Item>
+          ))}
+        </Slider>
 
-      <Slider.JS rootId={id} interval={interval && interval * 1e3} infinite />
-
-      <div class="flex justify-between pt-8 lg:px-16">
         {props.dots && <Dots slides={slides} interval={interval} />}{" "}
         {props.arrows && <Buttons />}
+
+        <Slider.JS rootId={id} interval={interval && interval * 1e3} infinite />
       </div>
     </div>
   );

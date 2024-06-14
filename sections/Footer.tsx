@@ -9,7 +9,7 @@ export default function Footer() {
 
   return (
     <footer class="bg-[#0A075F] pt-9" id="footer">
-      <div class="max-container-auto justify-between flex flex-row flex-wrap pt-14">
+      <div class="max-container-auto justify-between flex flex-row flex-wrap pt-14 page-content left">
         <div class="flex flex-row flex-wrap lg:flex-col gap-4 max-w-[333px]">
           <Icon id="Ticket" width={34} height={34} />
           <p class="dm-sans text-[#F3F3F3] text-sm font-normal">

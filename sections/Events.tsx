@@ -46,7 +46,7 @@ export default function Events({ events }: Props) {
   ];
 
   return (
-    <div class="max-container-auto" id="events">
+    <div class="max-container-auto page-content left" id="events">
       <div class="w-full flex flex-col lg:flex-row items-center justify-between">
         <h2 class="dm-sans text-[#242565] text-4xl font-bold pb-5 lg:pb-0">
           Próximos eventos

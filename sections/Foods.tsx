@@ -28,7 +28,7 @@ export default function Foods({ title, foods, type = "image" }: Props) {
   const id = useId();
 
   return (
-    <div class="max-container-auto flex flex-col gap-11 my-16">
+    <div class="max-container-auto flex flex-col gap-11 my-16 page-content right">
       <h2 class="text-center dm-sans text-[#242565] font-bold text-4xl">
         Comidas deliciosas para você
       </h2>

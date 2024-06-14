@@ -15,7 +15,7 @@ interface Props {
 
 export default function Sponsors({ sponsors }: Props) {
   return (
-    <div class="max-container-auto flex flex-col items-center justify-center my-16" id="sponsors">
+    <div class="max-container-auto flex flex-col items-center justify-center my-16 page-content left" id="sponsors">
       <h2 class="text-center dm-sans text-[#242565] font-bold text-4xl">
         Nossos patrocinadores
       </h2>
