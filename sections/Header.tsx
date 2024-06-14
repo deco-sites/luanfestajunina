@@ -30,7 +30,13 @@ export default function Header() {
         </div>
 
         <div class="flex flex-row justify-between pb-28 gap-10">
-          {band && <img class="hidden lg:block" src={band} loading="lazy" />}
+          {band && (
+            <img
+              class="hidden lg:block min-w-[500px] min-h-[369px]"
+              src={band}
+              loading="lazy"
+            />
+          )}
           <div class="flex flex-col justify-center gap-8 pt-9 lg:pt-0">
             <h1 class="dm-sans font-bold text-4xl text-white">
               Arraiá da Amizade!{" "}
