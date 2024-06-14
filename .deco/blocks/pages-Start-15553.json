@@ -55,35 +55,35 @@
       "foods": [
         {
           "label": "Bolos simples",
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10737/17a42f42-b57a-467a-a3b5-9d536ba5fc25"
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10737/3885313f-bb6b-4f3c-aec9-f5eb3105920d"
         },
         {
           "label": "Bolos recheados",
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10737/cabec32e-7272-4df6-ae22-12f80d8579d4"
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10737/211d7f62-d612-40bb-b158-1f9da3657587"
         },
         {
           "label": "Doces",
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10737/41a28885-321a-454f-a79a-4e37626eef00"
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10737/b4cbc127-1832-4179-8d93-585a86fc0b5d"
         },
         {
           "label": "Brownies",
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10737/834cde0f-bffc-4303-be66-7ea9ff136583"
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10737/340913c7-aceb-4be5-b466-580d2e983a32"
         },
         {
           "label": "Tortas doces",
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10737/1f464e8a-b643-415e-b681-333c123b03d1"
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10737/2b83cef1-bc35-4aaf-b1f4-b233c7af37d9"
         },
         {
           "label": "Kits",
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10737/6b9ff6fe-a772-472a-b963-9157511860a0"
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10737/33308f1c-4cb2-431d-8e7f-f2dbfd32104f"
         },
         {
           "label": "Cupcakes",
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10737/e19e6c9b-7ca2-4a7a-811d-7699bf5c1142"
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10737/0459adc0-6583-467f-9180-b018c1eb47f8"
         },
         {
           "label": "Chocolates",
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10737/427470ac-ab8c-4cf0-b9fd-90ed971e5564"
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10737/9292a151-9c6d-46c7-97d6-18b7479022fc"
         }
       ]
     },
