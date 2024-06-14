@@ -50,6 +50,44 @@
       ]
     },
     {
+      "__resolveType": "site/sections/Foods.tsx",
+      "type": "image",
+      "foods": [
+        {
+          "label": "Bolos simples",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10737/17a42f42-b57a-467a-a3b5-9d536ba5fc25"
+        },
+        {
+          "label": "Bolos recheados",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10737/cabec32e-7272-4df6-ae22-12f80d8579d4"
+        },
+        {
+          "label": "Doces",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10737/41a28885-321a-454f-a79a-4e37626eef00"
+        },
+        {
+          "label": "Brownies",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10737/834cde0f-bffc-4303-be66-7ea9ff136583"
+        },
+        {
+          "label": "Tortas doces",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10737/1f464e8a-b643-415e-b681-333c123b03d1"
+        },
+        {
+          "label": "Kits",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10737/6b9ff6fe-a772-472a-b963-9157511860a0"
+        },
+        {
+          "label": "Cupcakes",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10737/e19e6c9b-7ca2-4a7a-811d-7699bf5c1142"
+        },
+        {
+          "label": "Chocolates",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10737/427470ac-ab8c-4cf0-b9fd-90ed971e5564"
+        }
+      ]
+    },
+    {
       "__resolveType": "site/sections/Sponsors.tsx",
       "sponsors": [
         {
@@ -89,6 +127,78 @@
           "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10737/40ca3922-71f4-4453-9fc2-8cb8ff5319a4"
         }
       ]
+    },
+    {
+      "__resolveType": "site/sections/Testimonials.tsx",
+      "arrows": true,
+      "dots": false,
+      "slides": [
+        {
+          "content": {
+            "description": "Foi muito bom participar desse São João com essa galera massa! TMJ Mulekote, levarei meus parças do Al-Hilal na próxima vez!",
+            "avatar": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10737/72e28fcd-3410-4601-9448-3a3aab4504a0",
+            "name": "Neymar",
+            "alt": "Neymar"
+          }
+        },
+        {
+          "content": {
+            "description": "¡Fue muy bueno participar de esta fiesta de San Juan con esta gente increíble! ¡TMJ Mulekote, llevaré a mis amigos del Inter Miami la próxima vez!",
+            "avatar": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10737/a1fc0ea3-573f-40f5-a333-2f49379119e0",
+            "name": "Messi",
+            "alt": "Messi"
+          }
+        },
+        {
+          "content": {
+            "description": "C'était génial de participer à cette fête de la Saint-Jean avec ce groupe incroyable ! TMJ Mulekote, j'emmènerai mes potes du PSG la prochaine fois !",
+            "avatar": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10737/368e0159-2749-4627-8f0f-de1e9609e8f9",
+            "name": "Kylian Mbappé",
+            "alt": "Kylian Mbappé"
+          }
+        }
+      ],
+      "title": "O que nossos clientes estão falando",
+      "testimonials": [
+        {
+          "text": "Foi muito bom participar desse São João com essa galera massa! TMJ Mulekote, levarei meus parças do Al-Hilal na próxima vez!",
+          "image": {
+            "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10737/59938fec-d1fe-4ead-83ba-18d59ceb7556",
+            "alt": "Neymar"
+          },
+          "user": {
+            "avatar": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10737/6863bc35-302e-49cf-983f-d8bcc7f31e12",
+            "name": "Neymar"
+          }
+        },
+        {
+          "text": "¡Fue muy bueno participar de esta fiesta de San Juan con esta gente increíble! ¡TMJ Mulekote, llevaré a mis amigos del Inter Miami la próxima vez!",
+          "image": {
+            "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10737/15c064c1-50b0-4825-a0ef-d1ae76a3cc75",
+            "alt": "Messi"
+          },
+          "user": {
+            "avatar": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10737/32c1d88a-6864-4194-bc92-d89f5189362f",
+            "name": "Messi"
+          }
+        },
+        {
+          "text": "C'était génial de participer à cette fête de la Saint-Jean avec ce groupe incroyable ! TMJ Mulekote, j'emmènerai mes potes du PSG la prochaine fois !",
+          "image": {
+            "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10737/da851a52-aa54-4abc-b754-5adf348b36d0",
+            "alt": "Kylian Mbappé"
+          },
+          "user": {
+            "avatar": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10737/40b323bd-6436-4ca2-8dec-5f9659f2737c",
+            "name": "Kylian Mbappé"
+          }
+        }
+      ],
+      "description": "Top!",
+      "layout": {
+        "variation": "Slider",
+        "headerAlignment": "center"
+      }
     },
     {
       "__resolveType": "site/sections/Footer.tsx"
